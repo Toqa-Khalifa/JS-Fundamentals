@@ -1,10 +1,8 @@
 const { argv } = require('node:process');
 
-let arg = parseInt(argv[2]);
-
-
-if (typeof arg === "number"){
-  console.log(`My number: ${arg}`);
-} else {
+if ( parseInt(argv[2])){
+  console.log(`My number: ${argv[2]}`);
+} 
+else  {
   console.log("Not a number");
 }

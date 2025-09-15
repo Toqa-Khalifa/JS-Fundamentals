@@ -1,12 +1,11 @@
 const { argv } = require('node:process');
 const arg = parseInt(argv[2]);
 
-
-let factorial=1;
-
-for (let i =1; i<= arg; i++){
-
-   factorial*=i;
+function factorial(n) {
+  if (isNaN(n) || n <= 1) {
+    return 1;               
+  }
+  return n * factorial(n - 1);  
 }
-  console.log(factorial);
 
+console.log(factorial(arg));

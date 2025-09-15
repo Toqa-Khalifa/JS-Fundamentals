@@ -1,4 +1,3 @@
-
 const { argv } = require('node:process');
 const arg2 =parseInt(argv[2]);
 const arg3 =parseInt(argv[3]);
